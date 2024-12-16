@@ -6,8 +6,8 @@ function App() {
     const successAudio = new Audio(successSound); // Create audio objects
     const failureAudio = new Audio(failureSound);
 
-    const possibleAttempts = 3;
-    const maxFailedAttempts = 2;
+    const possibleAttempts = 20;
+    const maxFailedAttempts = 5;
     
     const [numOfAttempts, setNumOfAttempts] = useState(0); // State for number of attempts
     const [failedAttempts, setFailedAttempts] = useState(0); // State for failed attempts
